@@ -1,11 +1,10 @@
-# from tkinter import *
+from tkinter import *
 
-# root = Tk()
-# root.title("GUI")
+root = Tk()
+root.title("GUI")
 # root.geometry("640x480") # 가로 * 세로
-# root.mainloop()
+root.geometry("640x480+100+300") # 가로 * 세로 + x좌표 + y좌표
 
-import tkinter as tk
+root.resizable(False, False) # x(너비), y(높이) 값 변경 불가 (창 크기 변경 불가)
 
-window = tk.Tk()
-window.mainloop()
+root.mainloop()
